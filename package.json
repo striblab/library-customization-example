@@ -1,14 +1,17 @@
 {
-  "name": "library-customization-example",
+  "name": "strib-library-customization-example",
   "version": "1.0.0",
-  "description": "Sample customizations for your Library instance",
+  "description": "Star Tribune custom Library instance",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "start": "node server/index.js",
+    "build": "node-sass --include-path custom/styles --include-path styles/partials --source-map public/css/style.css.map --source-map-contents styles/style.scss public/css/style.css"
+  },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nytimes/library-customization-example.git"
+    "url": "https://github.com/striblab/library-customization-example"
   },
-  "author": "The New York Times",
+  "author": "The Star Tribune",
   "license": "Apache-2.0",
   "bugs": {
     "url": "https://github.com/nytimes/library-customization-example/issues"
